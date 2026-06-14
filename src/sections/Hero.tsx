@@ -29,7 +29,7 @@ export default function Hero() {
                     <input 
                         type="email" 
                         placeholder="Enter your email" 
-                        className="bg-transparent flex-1 px-4 min-w-0 outline-none"
+                        className="bg-transparent flex-1 px-4 min-w-0 outline-none w-full"
                     />
                     <Button type="submit" className="whitespace-nowrap" size="sm">Sign Up</Button>
                 </form>
