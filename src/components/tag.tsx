@@ -1,0 +1,13 @@
+import { twMerge } from "tailwind-merge"
+
+type Prop = React.HTMLAttributes<HTMLDivElement>
+
+export default function Tag(props: Prop) {
+    const { className, children, ...otherProps } = props; 
+    return (
+        <div className={twMerge("inline-flex border border-lime-400 gap-2 text-lime-400 px-3 py-1 rounded-full uppercase items-center justify-center", className)} {...otherProps}>
+            <span className="text-sm">&#10038;</span>
+            <span>{children}</span>
+        </div>
+    )
+}
